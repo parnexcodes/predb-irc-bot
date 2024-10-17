@@ -1,0 +1,16 @@
+[package]
+name = "predb-irc-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+irc = "1.0.0"
+futures = "0.3"
+tokio = { version = "1.0", features = ["full"] }
+colored = "2.1.0"
+regex = "1.11.0"
+sqlx = { version = "0.8.2", features = ["runtime-tokio-rustls", "postgres", "uuid"] }
+dotenvy = "0.15.7"
+log = "0.4"
+env_logger = "0.11.5"
+uuid = { version = "1.4", features = ["v4", "fast-rng"] }
